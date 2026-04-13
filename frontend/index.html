@@ -1,0 +1,17 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Frontend</h2>
+  <button onclick="fetchData()">Call Backend</button>
+  <p id="output"></p>
+
+  <script>
+    function fetchData() { 
+      fetch('http://localhost:5000/')
+        .then(res => res.text())
+        .then(data => document.getElementById('output').innerText = data);
+    }
+  </script>
+</body>
+</html>

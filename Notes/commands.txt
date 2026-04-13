@@ -1,0 +1,5 @@
+Backend:
+    1. python app.py
+
+Frontend:
+    1. python -m http.server 8080
